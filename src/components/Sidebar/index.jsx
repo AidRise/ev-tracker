@@ -84,13 +84,14 @@ const useStyles = makeStyles((theme) => ({
     ...theme.mixins.toolbar,
   },
   content: {
+    //display: 'flex',
     flexGrow: 1,
     padding: theme.spacing(3),
   },
 }));
 
 
-const Sidebar = () => {
+const Sidebar = ({children}) => {
     const classes = useStyles();
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
@@ -187,6 +188,7 @@ const Sidebar = () => {
             </Drawer>
             <main className={classes.content}>
                 <div className={classes.toolbar} />
+                    {children}
                 {/* <Typography paragraph>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
