@@ -33,15 +33,15 @@ The VehicleInfo is to present the respective data for the selected EV. Also it i
 
 ## Get Started
 To run project locally clone or download repository to your local machine.
-`git clone https://github.com/AidRise/ev-tracker.git`
+```git clone https://github.com/AidRise/ev-tracker.git```
 
 ### Setup
 Install node packages by running:
-`npm install`
+```npm install```
 Or
-`yarn`
+```yarn```
 
 Once packages have been install you can run the project locally with:
-`npm start`
+```npm start```
 Or
-`yarn start`
+```yarn start```
