@@ -32,7 +32,7 @@ The VehicleInfo is to present the respective data for the selected EV. Also it i
 
 
 ## Get Started
-To run project locally clone or download repository to your local machine.
+To run project locally clone or download repository to your local machine:<br/>
 ```git clone https://github.com/AidRise/ev-tracker.git```
 
 ### Setup
