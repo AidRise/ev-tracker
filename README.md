@@ -45,3 +45,7 @@ Once packages have been install you can run the project locally with:<br/>
 ```npm start```<br/>
 Or<br/>
 ```yarn start```
+
+#### Google Maps Api
+You will need to create your own api key to run Google Maps locally.
+You can find documentation own how to set up an api key here: https://developers.google.com/maps/documentation
