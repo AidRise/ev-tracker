@@ -38,7 +38,7 @@ const VehicleInfo = ({selectedVehicle}) => {
             <TextField id="outlined-basic" label="Miles Driven" variant="outlined" defaultValue=" " value={selectedVehicle ? selectedVehicle.milesDrivenToday : " "} disabled/>
             <TextField id="outlined-basic" label="Last Charge" variant="outlined" defaultValue=" " value={selectedVehicle ? selectedVehicle.lastCharge : " "} disabled/>
             <Divider className={classes.divider} />
-            {selectedVehicle.driver === 'Autonomous' ?
+            {selectedVehicle && selectedVehicle.driver === 'Autonomous' ?
                 <Button variant="contained" color="primary">Return Home to Charge</Button>
             :
                 <Button variant="contained" color="primary">Send Charge Station Location</Button>

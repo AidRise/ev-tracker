@@ -8,6 +8,7 @@ import Divider from '@material-ui/core/Divider';
 import InboxIcon from '@material-ui/icons/Inbox';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import LocalShippingTwoToneIcon from '@material-ui/icons/LocalShippingTwoTone';
+import ListSubheader from '@material-ui/core/ListSubheader';
 import { AutorenewTwoTone } from '@material-ui/icons';
 //import { FixedSizeList as List } from 'react-window';
 
@@ -24,6 +25,14 @@ const useStyles = makeStyles((theme) => ({
         display: 'none'
     }
   },
+  header: {
+    fontSize: '1.5rem',
+    fontFamily: '"Roboto", "Helvetica", "Arial", "sans-serif"',
+    fontWeight: 400,
+    lineHeight: 1.334,
+    letterSpacing: '0em',
+    color: 'rgba(0, 0, 0, 0.87)'
+  }
 }));
 
 function ListItemLink(props) {
@@ -35,8 +44,16 @@ const FleetList = ({vehicles, setSelectedVehicle}) => {
 
     return (
         <div className={classes.root}>
-            <List component="nav" aria-label="main mailbox folders">
-            {/* <List height={400} width={300} itemSize={20} itemCount={30}> */}
+            <List 
+                component="nav" 
+                aria-label="Fleet List"
+                
+            >
+                
+                <ListSubheader component="div" id="nested-list-subheader" className={classes.header} disableSticky={true}>
+                    Fleet List
+                </ListSubheader>
+            
                 {vehicles.map((vehicle, i) => {
                     return(
                         <>
