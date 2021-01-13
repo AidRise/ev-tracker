@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import {
   Chart,
@@ -8,8 +8,6 @@ import {
 } from '@devexpress/dx-react-chart-material-ui';
 
 import { Animation } from '@devexpress/dx-react-chart';
-import { purple } from '@material-ui/core/colors';
-//import { PieChartTwoTone } from '@material-ui/icons';
 
 const data = [
   { charge: '> 80%', val: 5, slice: 'green'},
@@ -18,10 +16,6 @@ const data = [
 ];
 
 const PieChart = () => {
-
-    //const [data, setData] = useState(data);
-
-  
 
     return (
         <Paper style={{maxHeight: '480px', minWidth: '500px'}}>
@@ -34,14 +28,11 @@ const PieChart = () => {
                     argumentField="charge"
                     color="green"
                     innerRadius={0.6}
-                >
-                
-                </PieSeries>
+                />
                 <Legend />
                 <Title
                     text="EV Fleet Charge Ranges"
                 />
-
                 <Animation />
             </Chart>
         </Paper>

@@ -4,13 +4,10 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import Divider from '@material-ui/core/Divider';
-import InboxIcon from '@material-ui/icons/Inbox';
-import DraftsIcon from '@material-ui/icons/Drafts';
 import LocalShippingTwoToneIcon from '@material-ui/icons/LocalShippingTwoTone';
 import ListSubheader from '@material-ui/core/ListSubheader';
-import { AutorenewTwoTone } from '@material-ui/icons';
-//import { FixedSizeList as List } from 'react-window';
+
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,10 +31,6 @@ const useStyles = makeStyles((theme) => ({
     color: 'rgba(0, 0, 0, 0.87)'
   }
 }));
-
-function ListItemLink(props) {
-  return <ListItem button component="a" {...props} />;
-}
 
 const FleetList = ({vehicles, setSelectedVehicle}) => {
     const classes = useStyles();
@@ -71,7 +64,6 @@ const FleetList = ({vehicles, setSelectedVehicle}) => {
                     );
                 })}
             </List>
-            {/* </List> */}
         </div>
     );
 }

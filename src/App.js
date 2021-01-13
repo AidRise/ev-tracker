@@ -180,6 +180,7 @@ function App() {
   return (
     <div className="App">
       <Sidebar>
+        {/* Content of interface are placed as children inside SideBar component as wrapper */}
         <TrackerMap 
           vehicles={vehicles}
           selectedVehicle={selectedVehicle}
@@ -193,7 +194,6 @@ function App() {
           />
           <VehicleInfo selectedVehicle={selectedVehicle} />
         </div>
-      
       </Sidebar>
     </div>
   );
