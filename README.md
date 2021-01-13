@@ -36,12 +36,12 @@ To run project locally clone or download repository to your local machine.
 ```git clone https://github.com/AidRise/ev-tracker.git```
 
 ### Setup
-Install node packages by running:
-```npm install```
-Or
+Install node packages by running:<br/>
+```npm install```<br/>
+Or<br/>
 ```yarn```
 
-Once packages have been install you can run the project locally with:
-```npm start```
-Or
+Once packages have been install you can run the project locally with:<br/>
+```npm start```<br/>
+Or<br/>
 ```yarn start```
